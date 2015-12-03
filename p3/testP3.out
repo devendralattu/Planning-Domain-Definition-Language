@@ -1,0 +1,123 @@
+blackbox version 43
+command line:  ./blackbox -o domain.pddl -f p3/p3.pddl
+
+Begin solver specification
+    -maxint        0   -maxsec 10.000000  graphplan
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p3/p3.pddl
+Problem name: p2
+Facts loaded.
+time: 1, 116 facts and 88 exclusive pairs.
+time: 2, 266 facts and 13076 exclusive pairs.
+Goals reachable at 2 steps but mutually exclusive.
+time: 3, 269 facts and 11881 exclusive pairs.
+Goals reachable at 3 steps but mutually exclusive.
+time: 4, 269 facts and 3429 exclusive pairs.
+Goals reachable at 4 steps but mutually exclusive.
+time: 5, 269 facts and 1745 exclusive pairs.
+Goals first reachable in 5 steps.
+3443 nodes created.
+
+####################################################
+goals at time 6:
+  arm-empty color_a_red color_b_blue color_c_green clean_bru 
+
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 3
+
+----------------------------------------------------
+Can't solve in 5 steps
+time: 6, 269 facts and 1592 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 7:
+  arm-empty color_a_red color_b_blue color_c_green clean_bru 
+
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 1612
+
+----------------------------------------------------
+Can't solve in 6 steps
+time: 7, 269 facts and 1592 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 8:
+  arm-empty color_a_red color_b_blue color_c_green clean_bru 
+
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 13248
+
+----------------------------------------------------
+Can't solve in 7 steps
+time: 8, 269 facts and 1592 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 9:
+  arm-empty color_a_red color_b_blue color_c_green clean_bru 
+
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 1063022
+
+----------------------------------------------------
+Can't solve in 8 steps
+time: 9, 269 facts and 1592 exclusive pairs.
+852 new nodes added.
+
+####################################################
+goals at time 10:
+  arm-empty color_a_red color_b_blue color_c_green clean_bru 
+
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Sat
+Iteration was 12504
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (pick-up spr-blue)
+2 (spray-paint spr-blue b blue)
+3 (stack spr-blue bru)
+4 (pick-up spr-red)
+5 (spray-paint spr-red a red)
+6 (stack spr-red pai-blue)
+7 (pick-up spr-green)
+8 (spray-paint spr-green c green)
+9 (stack spr-green pai-red)
+End plan
+----------------------------------------------------
+
+9 total actions in plan
+46331 entries in hash table, 53164 hash hits, avg set size 8
+99503 total set-creation steps (entries + hits + plan length - 1)
+314488 actions tried
+
+####################################################
+Total elapsed time:   11.70 seconds
+Time in milliseconds: 11699
+
+####################################################

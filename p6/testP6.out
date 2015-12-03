@@ -1,0 +1,235 @@
+blackbox version 43
+command line:  ./blackbox -o domain.pddl -f p6/p6.pddl
+
+Begin solver specification
+    -maxint        0   -maxsec 10.000000  graphplan
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p6/p6.pddl
+Problem name: p6
+Facts loaded.
+time: 1, 86 facts and 51 exclusive pairs.
+time: 2, 150 facts and 2691 exclusive pairs.
+time: 3, 161 facts and 2908 exclusive pairs.
+time: 4, 175 facts and 2244 exclusive pairs.
+time: 5, 179 facts and 1469 exclusive pairs.
+time: 6, 197 facts and 1907 exclusive pairs.
+time: 7, 200 facts and 1408 exclusive pairs.
+Goals reachable at 7 steps but mutually exclusive.
+time: 8, 200 facts and 1008 exclusive pairs.
+Goals reachable at 8 steps but mutually exclusive.
+time: 9, 200 facts and 951 exclusive pairs.
+Goals reachable at 9 steps but mutually exclusive.
+time: 10, 200 facts and 912 exclusive pairs.
+Goals first reachable in 10 steps.
+5317 nodes created.
+
+####################################################
+goals at time 11:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 2
+
+----------------------------------------------------
+Can't solve in 10 steps
+time: 11, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 12:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 1025
+
+----------------------------------------------------
+Can't solve in 11 steps
+time: 12, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 13:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 3394
+
+----------------------------------------------------
+Can't solve in 12 steps
+time: 13, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 14:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 99411
+
+----------------------------------------------------
+Can't solve in 13 steps
+time: 14, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 15:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 242858
+
+----------------------------------------------------
+Can't solve in 14 steps
+time: 15, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 16:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 1485573
+
+----------------------------------------------------
+Can't solve in 15 steps
+time: 16, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 17:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 3843281
+
+----------------------------------------------------
+Can't solve in 16 steps
+time: 17, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 18:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 13853026
+
+----------------------------------------------------
+Can't solve in 17 steps
+time: 18, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 19:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 38901317
+
+----------------------------------------------------
+Can't solve in 18 steps
+time: 19, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 20:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 120082813
+
+----------------------------------------------------
+Can't solve in 19 steps
+time: 20, 200 facts and 912 exclusive pairs.
+643 new nodes added.
+
+####################################################
+goals at time 21:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Sat
+Iteration was 231660287
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (unstack c b)
+2 (put-down c)
+3 (unstack b a)
+4 (put-down b)
+5 (pick-up bru-3)
+6 (load-brush bru-3 pai-green green)
+7 (brush-paint bru-3 b green)
+8 (stack bru-3 pai-green)
+9 (pick-up bru-2)
+10 (load-brush bru-2 pai-blue blue)
+11 (brush-paint bru-2 c blue)
+12 (stack bru-2 bru-3)
+13 (pick-up b)
+14 (stack b c)
+15 (pick-up bru-1)
+16 (load-brush bru-1 pai-red red)
+17 (brush-paint bru-1 a red)
+18 (stack bru-1 bru-2)
+19 (pick-up a)
+20 (stack a b)
+End plan
+----------------------------------------------------
+
+20 total actions in plan
+12065259 entries in hash table, 26716558 hash hits, avg set size 14
+38781836 total set-creation steps (entries + hits + plan length - 1)
+42320369 actions tried
+
+####################################################
+Total elapsed time:   60 minutes, 1 seconds
+Time in milliseconds: 3600790
+
+####################################################

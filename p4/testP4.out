@@ -1,0 +1,218 @@
+blackbox version 43
+command line:  ./blackbox -o domain.pddl -f p4/p4.pddl
+
+Begin solver specification
+    -maxint        0   -maxsec 10.000000  graphplan
+    -maxint        0   -maxsec 0.000000  chaff
+End solver specification
+Loading domain file: domain.pddl
+Loading fact file: p4/p4.pddl
+Problem name: p2
+Facts loaded.
+time: 1, 77 facts and 41 exclusive pairs.
+time: 2, 117 facts and 1165 exclusive pairs.
+time: 3, 127 facts and 1437 exclusive pairs.
+time: 4, 140 facts and 1523 exclusive pairs.
+time: 5, 143 facts and 1113 exclusive pairs.
+time: 6, 160 facts and 1481 exclusive pairs.
+time: 7, 162 facts and 1126 exclusive pairs.
+Goals reachable at 7 steps but mutually exclusive.
+time: 8, 162 facts and 786 exclusive pairs.
+Goals reachable at 8 steps but mutually exclusive.
+time: 9, 162 facts and 683 exclusive pairs.
+Goals reachable at 9 steps but mutually exclusive.
+time: 10, 162 facts and 644 exclusive pairs.
+Goals first reachable in 10 steps.
+3963 nodes created.
+
+####################################################
+goals at time 11:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 3
+
+----------------------------------------------------
+Can't solve in 10 steps
+time: 11, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 12:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 584
+
+----------------------------------------------------
+Can't solve in 11 steps
+time: 12, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 13:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 2662
+
+----------------------------------------------------
+Can't solve in 12 steps
+time: 13, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 14:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 33178
+
+----------------------------------------------------
+Can't solve in 13 steps
+time: 14, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 15:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 109201
+
+----------------------------------------------------
+Can't solve in 14 steps
+time: 15, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 16:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 393513
+
+----------------------------------------------------
+Can't solve in 15 steps
+time: 16, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 17:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 1083114
+
+----------------------------------------------------
+Can't solve in 16 steps
+time: 17, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 18:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 2773398
+
+----------------------------------------------------
+Can't solve in 17 steps
+time: 18, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 19:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Unsat
+Iteration was 6901107
+
+----------------------------------------------------
+Can't solve in 18 steps
+time: 19, 162 facts and 644 exclusive pairs.
+477 new nodes added.
+
+####################################################
+goals at time 20:
+  arm-empty color_a_red color_b_green color_c_blue on_a_b 
+on_b_c on-table_c clean_bru 
+
+
+----------------------------------------------------
+Invoking solver graphplan
+Result is Sat
+Iteration was 13714652
+Performing plan justification:
+   0 actions were pruned in 0.00 seconds
+
+----------------------------------------------------
+Begin plan
+1 (unstack c b)
+2 (put-down c)
+3 (unstack b a)
+4 (put-down b)
+5 (pick-up bru)
+6 (load-brush bru pai-green green)
+7 (brush-paint bru b green)
+8 (water-bucket bru green w)
+9 (load-brush bru pai-blue blue)
+10 (brush-paint bru c blue)
+11 (water-bucket bru blue w)
+12 (stack bru w)
+13 (pick-up b)
+14 (stack b c)
+15 (pick-up spr-red)
+16 (spray-paint spr-red a red)
+17 (stack spr-red pai-blue)
+18 (pick-up a)
+19 (stack a b)
+End plan
+----------------------------------------------------
+
+19 total actions in plan
+792906 entries in hash table, 1674069 hash hits, avg set size 14
+2466993 total set-creation steps (entries + hits + plan length - 1)
+2606635 actions tried
+
+####################################################
+Total elapsed time:   1 minutes, 15 seconds
+Time in milliseconds: 75051
+
+####################################################
